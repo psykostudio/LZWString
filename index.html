@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <!--  Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('app').catch(function(err){ console.error(err); }).then(function (app) {
+          const application = new app.default()
+      });
+    </script>
+</head>
+
+<!-- Display the application -->
+<body>
+    <canvas id="dobble"></canvas>
+</body>
+
+</html>
